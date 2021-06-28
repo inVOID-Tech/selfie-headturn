@@ -18,7 +18,7 @@ Add following lines in your module level ```build.gradle```
 ```
 dependencies {
     ....
-    implementation 'co.invoid.android:headturn:1.0.0rc1'
+    implementation 'co.invoid.android:headturn:1.0.0rc3'
 }
 ```
 
@@ -26,11 +26,11 @@ dependencies {
 ## Initialize SDK
 
 ```
-HeadTurnOptions HeadTurnOptions = new headTurnOptions.Builder()
+HeadTurnOptions HeadTurnOptions = new HeadTurnOptions.Builder()
     .setUserId("userId")
     .setNoOfAttempts(5)//Default is infinite
     .build();
-HeadTurnHelper.with(context, authKey, userId, headTurnOptions).start();
+HeadTurnHelper.with(context, authKey, headTurnOptions).start();
 ```
 - User id is mandatory. You can pass any random string but make sure you are passing unique userid for you each of your users.
 - Use `setNoOfAttempts()` to set allowed no of head turn attempts.
