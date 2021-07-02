@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invoid_don_t_include_objects_in_the_background">Don\'t include objects in the background</string>
+    <string name="invoid_instructions">Instructions</string>
+    <string name="invoid_loading">Loading</string>
+    <string name="invoid_powered_by">Powered by</string>
+    <string name="invoid_follow_below_tips_for_quick_verification">Follow below tips for quick verification</string>
+    <string name="invoid_place_your_head_within_the_frame">Place your head within the frame</string>
+    <string name="invoid_ensure_good_lighting">Ensure good lighting</string>
+    <string name="invoid_don_t_wear_face_mask_and_glasses">Don\'t wear face mask and glasses</string>
+    <string name="invoid_don_t_wear_hat">Don\'t wear hat</string>
+    <string name="invoid_video_verification">Video Verification</string>
+    <string name="invoid_your_data_is_secured">Your data is secured</string>
+    <string name="invoid_proceed">Proceed</string>
+    <string name="invoid_exit_without_completing_whole_process">Are you sure you want to exit without completing the whole process?</string>
+    <string name="invoid_cancel">Cancel</string>
+    <string name="invoid_exit">Exit</string>
+    <string name="invoid_error_opening_camera">Error opening camera!</string>
+    <string name="invoid_try_again">Try Again</string>
+    <string name="invoid_mutiple_face_detected">Multiple face detected</string>
+    <string name="invoid_look_straight">Look straight</string>
+    <string name="invoid_come_closer">Come closer</string>
+    <string name="invoid_move_away">Move away</string>
+    <string name="invoid_please_stay_still_click_picture">Perfect, please stay still and click picture</string>
+    <string name="invoid_eyes_closed">Eyes closed</string>
+    <string name="invoid_face_not_in_frame">Face not in frame</string>
+    <string name="invoid_same_face_not_found">Same face not found</string>
+    <string name="invoid_keep_head_in_centre">Keep your head in the centre</string>
+    <string name="invoid_look_over_right_shoulder">Slowly look over your right shoulder</string>
+    <string name="invoid_look_over_left_shoulder">Slowly look over your left shoulder</string>
+    <string name="invoid_continue_text">Continue</string>
+    <string name="invoid_align_your_face_in_frame">Align your face in the frame</string>
+</resources>

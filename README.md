@@ -18,22 +18,39 @@ Add following lines in your module level ```build.gradle```
 ```
 dependencies {
     ....
-    implementation 'co.invoid.android:headturn:1.0.0rc1'
+    implementation 'co.invoid.android:headturn:1.0.0rc6'
 }
 ```
 
 
 ## Initialize SDK
 
+- To use system default language
 ```
 HeadTurnOptions HeadTurnOptions = new headTurnOptions.Builder()
     .setUserId("userId")
     .setNoOfAttempts(5)//Default is infinite
     .build();
-HeadTurnHelper.with(context, authKey, userId, headTurnOptions).start();
+HeadTurnHelper.with(context, "authKey", userId, headTurnOptions).start();
 ```
+
+- To use any other other langauge
+```
+String languageCode = "hi";
+// String languageCode = "en";
+// These are ISO 639-1 language codes
+
+HeadTurnOptions headTurnOptions = new HeadTurnOptions.Builder()
+    .setUserId("userId")
+    .setLanguageCode(languageCode)
+    .setNumberOfAttempts(5)//Default is infinite
+    .build();
+HeadTurnHelper.with(this, "authKey", headTurnOptions).start();
+```
+
 - User id is mandatory. You can pass any random string but make sure you are passing unique userid for you each of your users.
 - Use `setNoOfAttempts()` to set allowed no of head turn attempts.
+- Sdk has built in support for english and hindi language but if you want to add support for other languages then you can easily do so with the help of `strings.xml`.  For example if you are adding support for marathi language then you need to define a `strings.xml` file with the same keys but with marathi translations and use the `ISO 639-1` language code of marathi in `setLanguageCode(languageCode)` function.
 
 ## Response returned from the SDK
 - Video file path
